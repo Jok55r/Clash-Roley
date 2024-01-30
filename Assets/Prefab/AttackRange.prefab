@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4095509790240659805}
   - component: {fileID: 3528518099183601960}
-  - component: {fileID: 5324728160512722257}
+  - component: {fileID: -8585975271066335380}
   - component: {fileID: 2620027891107805083}
   - component: {fileID: 3956704510287243558}
   m_Layer: 0
-  m_Name: Vision
+  m_Name: AttackRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5324728160512722257
+--- !u!114 &-8585975271066335380
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6205229434327625191}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 377b63dc97d241d44af0c2ce29e258ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 34a40f5c6f3bca14ba56ca42c5ec327e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   entity: {fileID: 0}

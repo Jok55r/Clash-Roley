@@ -1,13 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Vision : MonoBehaviour
 {
-    public Troop troop;
+    public Entity entity;
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        troop.target = collision.gameObject;
+        if (entity.target != null)
+            return;
+        Entity other = collision.gameObject.GetComponent<Entity>();
+        if (other.teamColor != entity.teamColor)
+        {
+            entity.target = collision.gameObject;
+        }
     }
 }

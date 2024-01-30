@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8172636931568246626}
   - component: {fileID: 8160538037204357166}
   m_Layer: 0
-  m_Name: Card
+  m_Name: Knite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 41eac96c6bf9d224b9c49051ed34f9d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,17 +100,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798a2dbde6f45a24380b23eb9e38d500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 0}
-  teamColor: {r: 1, g: 1, b: 1, a: 0}
+  teamColor: {r: 1, g: 1, b: 1, a: 1}
   healthBar: {fileID: 8488780880882677221}
+  cardType: 2
+  health: 690
+  damage: 79
+  speed: 1
+  damageSpeed: 0.8
   vision: {fileID: 6205229434327625191, guid: 7a339ab4faf97664ba7d9eae24b89f6f, type: 3}
-  visionArea: 5
+  visionArea: 8
   attackRange: {fileID: 6205229434327625191, guid: c21894ec2d5e81d4f88be04b521e8369, type: 3}
+  attackRangeArea: 5
   projectile: {fileID: 4737722785449148918, guid: 7e4fa8524ccbfac439e67d50736ac188, type: 3}
+  projectileSpeed: 5
   target: {fileID: 0}
   inRange: 0
   tempAttackTime: 0
-  health: 10
 --- !u!61 &8172636931568246626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,7 +152,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.25, y: 1.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

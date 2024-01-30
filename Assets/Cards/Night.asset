@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcdda30b3f06eaf4fa0e81d7353f145d, type: 3}
+  m_Name: Night
+  m_EditorClassIdentifier: 
+  cardType: 2
+  sprite: {fileID: 21300000, guid: 41eac96c6bf9d224b9c49051ed34f9d5, type: 3}
+  count: 1
+  health: 1766
+  damage: 202
+  speed: 1
+  damageSpeed: 0.8
+  attackRangeArea: 2
