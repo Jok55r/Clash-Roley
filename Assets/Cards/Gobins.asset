@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcdda30b3f06eaf4fa0e81d7353f145d, type: 3}
-  m_Name: King Towa
+  m_Name: Gobins
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: e0b883fd201b7ab42998f73bbdce6165, type: 3}
-  cardType: 1
-  target: 1
+  sprite: {fileID: 21300000, guid: 72f442e6061d7964fa5e4d2089edf614, type: 3}
+  cardType: 2
+  targetAir: 0
   splashDamage: 0
-  rangeAttack: 1
-  count: 1
-  health: 4824
-  damage: 109
-  speed: 0
-  damageSpeed: 1
-  attackRangeArea: 4
+  count: 4
+  health: 202
+  damage: 120
+  speed: 1.5
+  damageSpeed: 0.9
+  attackRangeArea: 2

@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcdda30b3f06eaf4fa0e81d7353f145d, type: 3}
   m_Name: Archairs
   m_EditorClassIdentifier: 
-  cardType: 3
   sprite: {fileID: 21300000, guid: aafb17019879bc34ba515822751b6787, type: 3}
+  cardType: 2
+  target: 1
+  splashDamage: 0
+  rangeAttack: 1
   count: 2
   health: 304
   damage: 107

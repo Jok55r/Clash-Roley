@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcdda30b3f06eaf4fa0e81d7353f145d, type: 3}
   m_Name: Muskeater
   m_EditorClassIdentifier: 
-  cardType: 3
   sprite: {fileID: 21300000, guid: 1ab30a64c45dc3b4983aa7d9c689f0fe, type: 3}
+  cardType: 2
+  target: 1
+  splashDamage: 0
+  rangeAttack: 1
   count: 1
   health: 720
   damage: 218

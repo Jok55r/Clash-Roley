@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.EventSystems.EventTrigger;
 
 
 public class Entity : MonoBehaviour
@@ -70,12 +71,9 @@ public class Entity : MonoBehaviour
     public virtual void Attack()
     {
         tempAttackTime = stats.damageSpeed;
-        switch (stats.cardType)
-        {
-            case CardType.tower or CardType.rangeTroop: RangeAttack(); break;
-            case CardType.troop: CloseAttack(); break;
-            default: break;
-        }
+        
+        if (stats.rangeAttack) RangeAttack();
+        else CloseAttack();
     }
     public void RangeAttack()
     {
@@ -88,6 +86,13 @@ public class Entity : MonoBehaviour
     public void CloseAttack()
     {
         target.GetComponent<Entity>().TakeDamage(stats.damage);
+    }
+
+    public void GetInVision(GameObject obj)
+    {
+        if (stats.target == Target.building && obj.GetComponent<Entity>().stats.cardType != CardType.building)
+            return;
+        target = obj;
     }
 
     public Vector3 GetDirection(Vector3 other)
@@ -112,7 +117,14 @@ public class Entity : MonoBehaviour
 public enum CardType
 {
     spell,
-    tower,
+    building,
     troop,
-    rangeTroop,
+    airTroop,
+}
+
+public enum Target
+{
+    ground,
+    air,
+    building,
 }

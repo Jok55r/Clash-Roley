@@ -314,8 +314,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcebcf9d57d8d184a95ffa2c6d2a3fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardsInDeck: 8
   prefab: {fileID: 1091360938632987052, guid: 09a73dc7283e5164faa49de0ad0ac54f, type: 3}
-  card: {fileID: 11400000, guid: d9776f761048e0f4980a21a3b2165572, type: 2}
+  cards:
+  - {fileID: 11400000, guid: d9776f761048e0f4980a21a3b2165572, type: 2}
+  - {fileID: 11400000, guid: 0c2d2ea56ec9e444385e5ce7e2b0bb4c, type: 2}
+  - {fileID: 11400000, guid: 17d4f29d96787ee4b8f37b0f1d88f64a, type: 2}
+  - {fileID: 11400000, guid: 11e97abf71e707246b2f17191c761179, type: 2}
+  - {fileID: 11400000, guid: de81beca7be163549914e89b9d1d3e6a, type: 2}
+  - {fileID: 11400000, guid: 286a0ea6757bc734ebccb36f4eb16311, type: 2}
+  - {fileID: 11400000, guid: 7944d2dfefb327c41840efd093a3f948, type: 2}
+  - {fileID: 11400000, guid: c75ddfc0faacc084e9a9bd6afb75274e, type: 2}
   team1Color: {r: 0, g: 0, b: 1, a: 1}
   team2Color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1001 &498677377

@@ -3,8 +3,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Data", menuName = "Cards", order = 1)]
 public class EntityStats : ScriptableObject
 {
-    public CardType cardType;
     public Sprite sprite;
+    public CardType cardType;
+    public Target target;
+    public bool splashDamage;
+    public bool rangeAttack;
 
     public int count = 1;
     public int health;
