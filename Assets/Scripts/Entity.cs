@@ -92,6 +92,8 @@ public class Entity : MonoBehaviour
     {
         if (stats.target == Target.building && obj.GetComponent<Entity>().stats.cardType != CardType.building)
             return;
+        else if (stats.target == Target.ground && obj.GetComponent<Entity>().stats.cardType == CardType.airTroop)
+            return;
         target = obj;
     }
 
