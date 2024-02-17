@@ -48,6 +48,7 @@ public class Entity : MonoBehaviour
         }
         else if (!inRange)
         {
+            
             direction = target.transform.position - transform.position;
         }
 
